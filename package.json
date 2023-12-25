@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://comimome.github.io/comimome_info",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
