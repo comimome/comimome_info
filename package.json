@@ -6,9 +6,10 @@
   "homepage": "https://comimome.github.io/comimome_info",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "vite build && xcopy /e dist docs",         
+    "rebuild": "vite build && rm -R docs && xcopy /e dist docs",
+    "git": "git add . && git commit && git push origin main"
   },
   "dependencies": {
     "react": "^18.2.0",
